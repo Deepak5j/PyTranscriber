@@ -1,4 +1,5 @@
 # PyTranscriber
-Speech to Text
-It uses Sphinx engine.
-Audio file in xx.wav format is provided
+* Speech to Text
+* Sphinx engine.
+* Audio file of xx.wav format is needed
+* Dependency speech_recognition
