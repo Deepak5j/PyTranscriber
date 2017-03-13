@@ -9,11 +9,10 @@ r = sr.Recognizer()
 with sr.AudioFile(AUDIO_FILE) as source:
     audio = r.record(source) # read the entire audio file
 
-# recognize speech using Sphinx
+# transcriber demo in puthon using sphinxengine
 try:
     print("Output text-->" + r.recognize_sphinx(audio))
 except sr.UnknownValueError:
     print("Sphinx could not understand audio 2->")
 except sr.RequestError as e:
     print("Sphinx error; {0} 3->".format(e))
-
